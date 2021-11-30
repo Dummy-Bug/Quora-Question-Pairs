@@ -9,7 +9,7 @@ Over 100 million people visit Quora every month, so it's no surprise that many p
          *** Credits: Kaggle ***
 <br>
 <p> </p>
-**Problem Statement**<br>
+<h4> Problem Statement </h4>
 
 - Identify which questions asked on Quora are duplicates of questions that have already been asked. 
 
@@ -25,6 +25,17 @@ Over 100 million people visit Quora every month, so it's no surprise that many p
 - Kaggle Winning Solution and other approaches: https://www.dropbox.com/sh/93968nfnrzh8bp5/AACZdtsApc1QSTQc7X0H3QZ5a?dl=0
 - Blog 1 : https://engineering.quora.com/Semantic-Question-Matching-with-Deep-Learning
 - Blog 2 : https://towardsdatascience.com/identifying-duplicate-questions-on-quora-top-12-on-kaggle-4c1cf93f1c30
+
+<h2>1.3 Real world/Business Objectives and Constraints </h2>
+
+1. The cost of a mis-classification can be very high. Imagine a scenario if we declare two questions to be duplicate but they are not duplicate , then all the answers that were referred to question1 will be referred to question2 which can be extremely dangerous. 
+
+2. You would want a probability of a pair of questions to be duplicates so that you can choose any threshold of choice.because if we predict only 1 or 0 then it would not tell us how confident we are with our prediction , but since we want misclassification to be very very less 
+
+
+3. No strict latency concerns.even if it takes quora to identify that questions are duplicate  a couple of seconds it would not matter much.
+
+4. Interpretability is partially important.
 
 <h1>2. Machine Learning Probelm </h1>
 
