@@ -62,7 +62,7 @@ Source: https://www.kaggle.com/c/quora-question-pairs#evaluation
 
 Metric(s): 
 
-* log-loss : https://www.kaggle.com/wiki/LogarithmicLoss
+* log-loss : https://www.kaggle.com/wiki/LogarithmicLoss ,it makes sense to use log-loss as performance metric as we don't want to just classify question pair to be 0 or 1 rather we also want the probability , and whenever we need the probability values log-loss is the best metric to use.
 
 * Binary Confusion Matrix
 
