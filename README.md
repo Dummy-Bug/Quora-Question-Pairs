@@ -47,6 +47,7 @@ Over 100 million people visit Quora every month, so it's no surprise that many p
 - Train.csv contains 5 columns : qid1, qid2, question1, question2, is_duplicate <br>
 - Size of Train.csv - 60MB <br>
 - Number of rows in Train.csv = 404,290
+
 </p>
 
 <h3> 2.1.2 Example Data point </h3>
@@ -56,12 +57,12 @@ Over 100 million people visit Quora every month, so it's no surprise that many p
 <h3> 2.2.1 Type of Machine Leaning Problem </h3>
 
 <p> It is a binary classification problem, for a given pair of questions we need to predict if they are duplicate or not. </p>
+
 Source: https://www.kaggle.com/c/quora-question-pairs#evaluation
 
 Metric(s): 
+
 * log-loss : https://www.kaggle.com/wiki/LogarithmicLoss
+
 * Binary Confusion Matrix
 
-<h2> 2.3 Train and Test Construction </h2>
-<p>  </p>
-<p> We build train and test by randomly splitting in the ratio of 70:30 or 80:20 whatever we choose as we have sufficient points to work with. </p>
