@@ -62,7 +62,9 @@ Source: https://www.kaggle.com/c/quora-question-pairs#evaluation
 
 Metric(s): 
 
-* log-loss : https://www.kaggle.com/wiki/LogarithmicLoss ,it makes sense to use log-loss as performance metric as we don't want to just classify question pair to be 0 or 1 rather we also want the probability , and whenever we need the probability values log-loss is the best metric to use.
+* log-loss : https://www.kaggle.com/wiki/LogarithmicLoss ,it makes sense to use log-loss as performance metric as we don't want to just classify question pair to be 0 or 1 rather we also want the probability , and whenever we need the probability values log-loss is the best metric to use.Log-Loss is a metric used to assess the model performance by taking the probabilities of a point belonging to a particular class, into consideration. Every time, the default threshold of 0.5 might not be appropriate. Sometimes the thresholds do vary. For example, if we want to predict whether a person is having a disease or not. By default, the threshold value used to decide the class label is 0.5. (ie., if P(yq=1|xq)>0.5, then the person is having the disease, or else no)
+So every time 0.5 is not the best threshold. Sometimes from the domain expertise and various factors, the threshold might go to 0.7 or 0.8 depending on the problem we are working on. In such a case, we need to go for the probabilistic estimates and assess the model performance, by taking these probabilistic estimates into consideration. In such a case, Log-Loss is the best metric to be used.
+Log-Loss is the best metric to be used when we are working on a multi-class classification problem. 
 
 * Binary Confusion Matrix
  This is our secondary matrix. We will also use the Binary Matrix to understand what is happening. Using it we can use precision , recall , tpr , fpr , tnr and fnr .
